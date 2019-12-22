@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>旅游观光</title>
+<link href="default.css" rel="stylesheet" type="text/css" media="screen" />
+<script src="animate.js"></script>
+        <meta charset="utf-8" />
+        <title>Carousel</title>
+        <script type="text/javascript">  
+    </script>
+    <style type="text/css">
+    </style>
+</head>
+<body background="images/6.jpg">
+<div id="header">
+  <div id="logo">
+    <h1><a href="#">探索世界<span style="color: orange">角落</span> <span style="color:purple">Sunrise</span> </a></h1>
+    <p></p>
+  </div>
+  <div id="menu-bg">
+  <div id="menu">
+    <ul id="main">
+      <li class="current_page_item"><a href="#">首页</a></li>
+      <li><a href="#">简介</a></li>
+      <li><a href="#">风土人情</a></li>
+      <li><a href="#">游记精选</a></li>
+      <li><a href="#">风土人情</a></li>
+      <li><a href="#">本地小吃</a></li>
+      <li><a href="#">路线选择</a></li>
+      <li><a href="#">自助行</a></li>
+      <li><a href="#">摄影摄像</a></li>
+      <li><a href="#">游记精选</a></li>
+      <li><a href="#">资源下载</a></li> 
+      <li><a href="#">雁过留声</a></li>
+      <li><a href="#">联系我们</a></li>
+    </ul>
+  </div>
+  </div>
+</div>
+<div id="wrapper">
+  <div id="page">
+    <div id="content">
+      <div class="box" id="box">
+         <div class="slider" id="slider">
+           <div class="slide"><img src="images/7.jpg" alt=""></div>
+           <div class="slide"><img src="images/1.jpg" alt=""></div>
+           <div class="slide"><img src="images/2.jpg" alt=""></div>
+           <div class="slide"><img src="images/3.jpg" alt=""></div>
+           <div class="slide"><img src="images/01.jpg" alt=""></div>
+           <div class="slide"><img src="images/6.jpg" alt=""></div>
+           <div class="slide"><img src="images/1.jpg" alt=""></div>
+         </div>
+         <span id="left"><</span>
+         <span id="right">></span>
+         <ul class="nav" id="nav">
+           <li class="active" >1</li>
+           <li>2</li>
+           <li>3</li>
+           <li>4</li>
+           <li>5</li>
+         </ul>
+       </div>
+      </div>
+      <div class="post">
+        <h1 class="title"><a href="#">欢迎来到观光网站</a></h1>
+        <p class="byline"><small>发布于2019年10月 <a href="#">旅游网</a></small></p>
+        <div class="entry">发布于2019年10
+          <p><strong>故宫</strong> 也叫紫禁城，是明清两代的最高办公地点 <a href="旅游网">位于北京中轴线的中心，</a>. 是世界上现存规模最大的宫殿型建筑， <a href="#">国家5A级旅游景区</a> 被誉为“世界五大宫之首”（法国凡尔赛宫、英国白金汉宫、美国白宫、俄罗斯克里姆林宫）。</p>
+          <p>我们致力于提供最优质的旅游服务，将我们的精力和热情与我们的多年相结合经验的。 我们最大的满意来自于为大量的客户提供满意的服务旅行的乐趣和灵感。<a href="#">乐趣和灵感</a><a href="#">乐趣和灵感</a>.</p>
+          <p class="links"><a href="#" class="more">雁过留声</a> &nbsp;&nbsp;&nbsp;</p>
+        </div>
+      </div>
+      <div class="post">
+        <div class="entry">
+          <p>我们致力于提供最优质的旅游服务，将我们的精力和热情与我们的多年相结合经验的。 我们最大的满意来自于为大量的客户提供满意的服务旅行的乐趣和灵感。 </p>
+          <p class="links"><a href="#" class="more">观光，旅行，冒险</a> &nbsp;&nbsp;&nbsp;</p>
+        </div>
+      </div>
+      <div class="post">
+        <h2 class="title"><a href="#">观光，旅行，冒险</a></h2>
+        <p class="byline"><small>最新发布于2019.12.21<a href="#">旅游网</a></small></p>
+        <div class="entry">
+          <p style="color:orange  ">飞翔，漫游，旅行，航行，探索，旅行，发现，冒险</p>
+          <p class="links"><a href="#" class="more" style="font-size:2em;">回到头部</a> &nbsp;&nbsp;&nbsp;</p>
+        </div>
+      </div>
+    </div>
+<div id="footer">
+  <div id="footer-content">
+    <p>&copy;2019 &nbsp;&nbsp; 飞翔，漫游，旅行，航行，探索，旅行，发现，冒险<a href="#/" style="font-size:2em; color:red">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;旅游网</a>.</p>
+  </div>
+</div>
+</body>
+<script>
+var text=document.getElementById("text");
+      var p1=document.getElementById("p1");
+      var box=document.getElementById("box");
+      var oNavlist=document.getElementById("nav").children;
+      var slider=document.getElementById("slider");
+      var left=document.getElementById("left");
+      var right=document.getElementById("right");
+      var index=1;
+      var timer;
+      var isMoving=false;
+      function next(){
+        index++;
+        navChange();
+        animate(slider,{left:-1200*index},function(){
+          if (index>5) {
+            slider.style.left="-1200px";
+            index=1;
+
+          }
+        });
+      }
+      function prev(){
+        index--;
+        navChange();
+        animate(slider,{left:-1200*index},function(){
+          if (index===0) {
+            slider.style.left="-6000px";
+            index=5;
+          }
+          isMoving=false;
+        });
+      }
+      var timer= setInterval(next,3000);
+      //鼠标划入清定时器
+      box.onmouseover=function(){
+        animate(left,{opacity:50});
+        animate(right,{opacity:50});
+        clearInterval(timer);
+      }
+      //鼠标划出开定时器
+      box.onmouseout=function(){
+        animate(left,{opacity:0});
+        animate(right,{opacity:0});
+        timer=setInterval(next,3000);
+      }
+      left.onclick=next;
+      right.onclick=prev;
+      //小按钮点击事件
+      for(var i=0;i<oNavlist.length;i++){
+        oNavlist[i].idx=i;
+        oNavlist[i].onclick=function(){
+          index=this.idx+1;
+          navChange();
+          animate(slider,{left:-1200*index});
+        }
+      }
+      //小按钮背景色切换
+      function navChange(){
+        for(var i=0;i<oNavlist.length;i++){
+          oNavlist[i].className='';
+          
+        }
+        if (index>5) {
+          oNavlist[0].className='active';
+        }
+        else if (index===0) {
+          oNavlist[4].className='active';
+        }
+        else{
+          oNavlist[index-1].className='active';
+        }
+      }
+</script>
+</html>
