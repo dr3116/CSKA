@@ -4,6 +4,102 @@
 	<meta charset="UTF-8">
 	<title>webbigwork</title>
 	<link rel="stylesheet" type="text/css" href="web3.css">
+	<style type="text/css">
+	*{
+		margin: 0 auto;
+		padding: 0 auto;
+	}
+    h1{
+    font-size:80px;
+    text-align:center;
+        }
+    p{
+        	font-size: 40px;
+        }
+    #introduce{
+    	display: block;
+    	margin-top: 20px;
+    	margin-left:0px;
+    }
+    #di{
+    	display: block;
+    	margin-top: 20px;
+    	margin-left:0px;
+    }
+    .all{
+    	position: relative;
+    	left:400px;
+    }
+    .all1{
+    	position: relative;
+    	left: 100px;
+    }
+    
+    </style>
 	<script src="animate.js"></script>
 </head>
+<body>
+	<h1>个人信息</h1>
+	 <form method="post"  action="www.baidu.com">
+	 	<div class="all">
+        <p>
+		   <lable for="username"> 	ID：</label>
+		      <input type="text" name="" id="username"></p></div>
+		<div class="all" >
+		<p>
+		  <lable for="introduce"> 个人描述：</label>
+		  <textarea name="commet"rows=5 cols=60  id="introduce">
+		  </textarea></p></div>
+		<div class="all">
+		<p>
+		   性 别：   <input type="radio" name="性别">男
+		    <input type="radio" name="性别">女</p></div>
+		<div class="all">
+		<p><lable for="home"> 	家乡：</label>
+		    <input type="text"  name=""  id="home"></p>
+		</div>
+		<div class="all">
+		<p><lable for="school"> 	工作：</label>
+		    <input type="text"  name=""  id="school"></p>
+		</div>
+		<div class="all">
+	    <p>
+		   年 级：   <select name="nianji">
+		     <option>one
+			 <option>two 
+			 <option>three
+			 <option>four
+			 <option selected>one
+			 </select></p></div>
+	    <div class="all">
+		<p>
+	        爱 好：   <input type="checkbox"name="sport">运动
+			<input type="checkbox"name="music">音乐
+			<input type="checkbox"name="movie">电影
+			<input type="checkbox"name="read">阅读</p></div>
+		<div class="all">
+		<p><lable for="work"> 	工作：</label>
+		      <input type="text"  name=""  id="work"></p>
+		  </div>
+	    <div class="all">
+		<p>
+		  <lable for="introduce"> 个性签名：</label>
+		  <textarea name="commet"rows=5 cols=60   id="introduce">
+		  </textarea></p></lable></div>
+		<div class="all" >
+		<p>
+		  <lable for="di">写一写你最想去的地方:</label>
+		  <textarea name="tt"rows=5 cols=60  id="di">
+		  </textarea></p></div>
+		 <div class="all" >
+		<p>
+	     文 件：<input type="file" name="filename"></p>
+		<p>
+        <input type="submit"value="提交">
+          <input type="reset"value="清空"></p>
+      </div>
+     </form>
+	
+</body>
 </html>
+
