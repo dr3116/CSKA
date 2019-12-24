@@ -2,8 +2,11 @@
 * @Author: dr3116
 * @Date:   2019-12-20 17:30:14
 * @Last Modified by:   dr3116
-* @Last Modified time: 2019-12-23 17:42:56
+* @Last Modified time: 2019-12-24 11:25:35
 */
+body{
+	background-image: url(E:/webhezuo/CSKA/duran/images/10.jpg);
+}
 .subject{
 	height: 1540px;
 	width: 800px;
@@ -63,7 +66,6 @@
 .mp4{
 	width:264px;
 	height: 300px;
-	background: orange;
 	border: 1px solid black;
 	float: left;
 }
