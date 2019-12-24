@@ -3,6 +3,11 @@
 <head>
 	<title>www.traveler.com</title>
 	<style type="text/css">
+		#top{
+			background-color: yellow;
+			width: 1519px;
+			height: 26px;
+		}
         *{
 			padding:0;
 			margin:0;
@@ -13,7 +18,7 @@
 		.box{
 			width: 1200px;
 			height: 381px;
-			margin:100px auto;
+			margin: 0px auto;
 			position: relative;
 			overflow: hidden;
 		}
@@ -67,34 +72,177 @@
 			background:red;
 			color: #FFFFFF;
 		}
+		#xiang{
+			position: fixed;
+			right: 0px;
+			top: 0px;
+			display: block;
+			background-color: black;
+		}
+		#shuru{
+			width: 400px;
+			height: 40px;
+			color: gray;
+			position: relative;
+			top: -50px;
+			left: 0px;
+			border:1px solid red;
+		}
+		#search{
+			width: 200px;
+			height: 52px;
+			background-color: red;
+			border:1px solid red;
+			color: white;
+		}
+		#sousuo{
+			width: 905px;
+			padding:0px;
+			margin-left: 800px;
+			margin-top: -68px;
+		}
+		#liebiao{
+			width: 1000px;
+			height: 60px;
+			margin-top: 50px;
+			margin-left: 280px;
+		}
+		#liebiao>#biao>li{
+			display: inline-block;
+			padding-left: 100px;
+			text-align: center;
+		}
+		#liebiao>ul>li:hover{
+			background-color: red;
+			color:white;
+		}
+		#biao{
+			margin-top: -10px;
+		}
+		#secondbon{
+			width: 1520px;
+			height: 140px;
+			background-color: rgb(224,224,224);
+			position: absolute;
+			top: 2000px;
+		}
+		.we{
+			width: 300px;
+			height: 80px;
+			border-right: 3px solid grey;
+			padding-top: 15px;
+		}
+		.we>h4{
+			position: relative;
+			right: -100px;
+		}
+		.we>h3{
+			position: relative;
+			right: 125px;
+		}
+		#bon{
+			background-color: black;
+			width: 1520px;
+			height: 80px;
+			position: absolute;
+			top: 2110px;
+		}
+		#bon>p{
+			color: white;
+			text-align: center;
+		}
+		a{
+			text-decoration: none;
+		}
+		.every{
+			width: 330px;
+			height: 280px;
+			display: inline-block;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
 	</style>
 </head>
 <body>
-	<div class="box" id="box">
-		<div class="slider" id="slider">
-			<div class="slide"><img src="Picture/suzhou.jpg"></div>
-			<div class="slide"><img src="Picture/yilihuahai.jpg"></div>
-			<div class="slide"><img src="Picture/daocheng.jpg"></div>
-			<div class="slide"><img src="Picture/qinhaihu.jpg"></div>
-			<div class="slide"><img src="Picture/jiuzhaigou.jpg"></div>
-			<div class="slide"><img src="Picture/suzhou.jpg"></div>
-			<div class="slide"><img src="Picture/yilihuahai.jpg"></div>
+	<div id="top"><span style="padding-left: 200px;"><a href="">联系我们：010-512233<img src="Picture/qq.png" style="width: 20px;height: 20px; padding-left:50px;"></a></span><span style="padding-left: 100px;"><a href="./login.html"><span style="padding-left: 400px;">请登录</span><img src="Picture/wx.png" style="width: 20px;height: 20px; padding-left: 20px;"><img src="Picture/wb.png" style="width: 20px;height: 20px; padding-left: 20px;"></a><a href="./logon.html" style="padding-left: 30px;">用户注册</a><a href=""><span style="padding-left: 30px;">我的主页</span></a></div>
+	<div style="width: 1519px;height: 200px;">
+			<img src="image/traveler.png" style="width: 300px;height: 150px;padding-left: 30px;padding-top: 25px;">
+			<div id="sousuo"><input id="shuru" type="text" name="rext" value=请输入关键字><input id="search" type="submit" name="search" value="搜索"></div>
+			<div style="float: right;padding-right: 300px;"><img src="Picture/zuji.png" style="width: 20px;height: 20px;"><span>我的收藏</span></div>
+			<div id="liebiao">
+				<ul id="biao">
+					<li><h3>网红热门景点<h3/></li>
+					<li><h3>出境旅游<h3/></li>
+					<li><h3>自驾游路线<h3/></li>
+					<li><h3>驴友社区<h3/></li>
+				</ul>
+			</div>
 		</div>
-		<span id="left"><</span>
-		<span id="right">></span>
-		<ul class="nav" id="nav">
-			<li class="active">1</li>
-			<li>2</li>
-			<li>3</li>
-			<li>4</li>
-			<li>5</li>
-		</ul>
+	<div id="xiang" style="width: 50px;height: 900px;">
+		 <img src="image/ce.png">
 	</div>
-	<div style="width: 500px; height: 640px; border: red 1px solid; position:relative; left: 500px; top: 70px;">
-		<video src="Video/ranwuLark.mp4"  controls="controls" style="width: 450px; height: 640px; padding-left: 25px;"></video>
-		<span id="left"><</span>
-		<span id="right">></span>
-	</div>
+	<div class="main" style="background-color: #c4c4c4; width: 1519px;height: 1800px;border-top: 3px solid red;margin-top: 0px;">
+		<div class="box" id="box">
+			<div class="slider" id="slider">
+				<div class="slide"><img src="Picture/suzhou.jpg"></div>
+				<div class="slide"><img src="Picture/daocheng1.png"></div>
+				<div class="slide"><img src="Picture/qinhaihu.jpg"></div>
+				<div class="slide"><img src="Picture/yilihuahai.jpg"></div>
+				<div class="slide"><img src="Picture/jiuzhaigou.jpg"></div>
+				<div class="slide"><img src="/suzhou.jpg"></div>
+				<div class="slide"><img src="/yilihuahai.jpg"></div>
+			</div>
+			<span id="left"><</span>
+			<span id="right">></span>
+			<ul class="nav" id="nav">
+				<li class="active">1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+			</ul>
+		</div>
+		<div style="width: 500px; height: 640px; border: red 1px solid; position:relative; left: 500px; top: 50px;">
+			<video src="Video/ranwuLark.mp4"  controls="controls" style="width: 450px; height: 640px; padding-left: 25px;"></video>
+			<span id="left"><</span>
+			<span id="right">></span>
+		</div>
+		<div id="wea" style="width: 1002px;height: 545px;border: 1px solid black;position: absolute;left: 230px;top: 1380px;">
+				 <div class="every"style="padding-left: 1px;"><img src="Picture/faguo.png"><p style="text-align: center;">在浪漫的法国城堡下徜徉</p></div>
+				 <div class="every"><img src="Picture/yidali.png"><p style="text-align: center;">在意大利海岸边看一眼夕阳</p></div>
+				 <div class="every"><img src="Picture/meizhou.png"><p style="text-align: center;">去看看玛雅人的金字塔</p></div>
+				 <div class="every" style="padding-left: 1px;"><img src="Picture/guilin.png"><p style="text-align: center;">桂林山水甲天下</p></div>
+				 <div class="every"><img src="Picture/lijiang.png"><p style="text-align: center;">丽江美景令人流连忘返</p></div>
+				 <div class="every"><img src="Picture/sanya.png"><p style="text-align: center;">捧一杯椰汁沐浴三亚海边的阳光</p></div>
+			</div>
+		<div id="secondbon">
+				<div class="we" style="position: absolute;left: 150px;">
+					<h3 style="float: right;">出境游</h3><br/>
+					<br/>
+					<h4 style="padding-left: 0px;">更多热门国家推荐</h4>
+				</div>
+				<div class="we" style="position: absolute;left: 450px;">
+					<h3 style="float: right;">自驾游</h3><br/>
+					<br/>
+					<h4>为您规划最佳路线</h4>
+				</div>
+				<div class="we" style="position: absolute;left: 750px;">
+					<h3 style="float: right;">旅游社交</h3><br/>
+					<br/>
+					<h4>发现更多志同道合的朋友</h4>
+				</div>
+				<div style="position: absolute;left: 1050px;padding-top: 15px;">
+					<h3 style="padding-left: 80px;">优质服务</h3>
+					<br/>
+					<h4 style="padding-left: 65px;">Travel全程为您提供优质服务</h4>
+				</div>
+			</div>
+			<div id="bon">
+				<br/>
+				<p>首页 | Traveler旅游 | Traveler品牌 | Traveler社区 | 旅游社交 | 商务合作 | 诚聘英才 | 法律服务</p>
+				<p>2019-2020 Traveler旅游社交 版权所有</p>
+			</div>
+		</div>
 </body>
 <script type="text/javascript">
 	var box = document.getElementById("box");
