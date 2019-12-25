@@ -1,8 +1,8 @@
 body {
 	margin: 0;
 	padding: 0;
-	background:(../images/bg.jpg);
-	background-image: 
+	//*background:(../images/bg.jpg);*/
+	background:(../images/bg1.png);
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 13px;
 	color: #FCFFFD;
@@ -371,8 +371,54 @@ img.right {
 #footer a {
 	color: #FBD900;
 }
+#a{
+	width: 500px;
+	height:440px;
+	border: 1px white;
+	margin-left:300px;
+	margin-top:-442px;
+	float:right;
+}
+#b{
+	width: 718px;
+	height:440px;
+	border: 1px  white;
+	margin-left:300px;
+	margin-top:-442px;
+}
+#c{
+	width:300px;
+	height:440px;
+	border: 1px white;
 
-
+}
+#c ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size:2em;
+}
+#d{
+	width:300px;
+	height:50px;
+	border: 1px solid red;
+}
+#c li {
+	display: inline;
+}
+#c li a{
+	color:orange;
+}
+#c a:hover {
+	margin: 0 3px 0 0;
+	background:white;
+	border-bottom: 3px solid #DDBB04;
+	color:red;
+}
+#e img{
+	width:300px;
+	height:200px;
+}
 *{
 	padding: 0;
 	margin: 0;
@@ -383,7 +429,7 @@ ul,li{
 .box{
 	width: 1200px;
 	height: 380px;
-	border: 1px solid #ffffff;
+	border: 1px  #ffffff;
 	margin: 3px auto;
 	margin-left:-100px;
 	position: relative;
