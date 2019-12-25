@@ -20,6 +20,7 @@
 			height: 381px;
 			margin: 0px auto;
 			position: relative;
+			top: 20px;
 			overflow: hidden;
 		}
 		.slider{
@@ -84,28 +85,31 @@
 			height: 40px;
 			color: gray;
 			position: relative;
-			top: -50px;
+			top: 0px;
 			left: 0px;
 			border:1px solid red;
 		}
 		#search{
 			width: 200px;
-			height: 52px;
+			height: 40px;
 			background-color: red;
 			border:1px solid red;
 			color: white;
+			padding-left: 0px;
+			padding-top: 0px;
 		}
 		#sousuo{
-			width: 905px;
-			padding:0px;
-			margin-left: 800px;
-			margin-top: -68px;
+			width: 602px;
+			height: 41px;
+			border: 3px solid white;
+			margin-left: 500px;
+			margin-top: -100px;
 		}
 		#liebiao{
 			width: 1000px;
 			height: 60px;
 			margin-top: 50px;
-			margin-left: 280px;
+			margin-left: 350px;
 		}
 		#liebiao>#biao>li{
 			display: inline-block;
@@ -164,14 +168,13 @@
 	</style>
 </head>
 <body>
-	<div id="top"><span style="padding-left: 200px;"><a href="">联系我们：010-512233<img src="Picture/qq.png" style="width: 20px;height: 20px; padding-left:50px;"></a></span><span style="padding-left: 100px;"><a href="./login.html"><span style="padding-left: 400px;">请登录</span><img src="Picture/wx.png" style="width: 20px;height: 20px; padding-left: 20px;"><img src="Picture/wb.png" style="width: 20px;height: 20px; padding-left: 20px;"></a><a href="./logon.html" style="padding-left: 30px;">用户注册</a><a href=""><span style="padding-left: 30px;">我的主页</span></a></div>
-	<div style="width: 1519px;height: 200px;">
-			<img src="image/traveler.png" style="width: 300px;height: 150px;padding-left: 30px;padding-top: 25px;">
+	<div id="top"><span style="padding-left: 200px;"><a href="">联系我们：010-512233<img src="Picture/qq.png" style="width: 20px;height: 20px; padding-left:50px;"></a></span><span style="padding-left: 50px;"><a href="./login.html"><span>请登录</span><img src="Picture/wx.png" style="width: 20px;height: 20px; padding-left: 20px;"><img src="Picture/wb.png" style="width: 20px;height: 20px; padding-left: 20px;"></a><a href="./logon.html" style="padding-left: 350px;">用户注册</a><a href=""><span style="padding-left: 30px;">我的主页</span></a><div style="margin-left: 1200px; margin-top: -25px;"><img src="Picture/zuji.png" style="width: 20px;height: 20px;"><span>我的收藏</span></div></div> 
+	<div style="width: 1519px;height: 200px; background-image: url(Picture/gongga.jpg);">
+			<img src="image/traveler.png" style="width: 300px;height: 150px;padding-left: 100px;padding-top: 25px;">
 			<div id="sousuo"><input id="shuru" type="text" name="rext" value=请输入关键字><input id="search" type="submit" name="search" value="搜索"></div>
-			<div style="float: right;padding-right: 300px;"><img src="Picture/zuji.png" style="width: 20px;height: 20px;"><span>我的收藏</span></div>
 			<div id="liebiao">
 				<ul id="biao">
-					<li><h3>网红热门景点<h3/></li>
+					<li><a href=""><h3>网红热门景点<h3/></a></li>
 					<li><h3>出境旅游<h3/></li>
 					<li><h3>自驾游路线<h3/></li>
 					<li><h3>驴友社区<h3/></li>
@@ -184,13 +187,13 @@
 	<div class="main" style="background-color: #c4c4c4; width: 1519px;height: 1800px;border-top: 3px solid red;margin-top: 0px;">
 		<div class="box" id="box">
 			<div class="slider" id="slider">
-				<div class="slide"><img src="Picture/suzhou.jpg"></div>
-				<div class="slide"><img src="Picture/daocheng1.png"></div>
-				<div class="slide"><img src="Picture/qinhaihu.jpg"></div>
-				<div class="slide"><img src="Picture/yilihuahai.jpg"></div>
-				<div class="slide"><img src="Picture/jiuzhaigou.jpg"></div>
-				<div class="slide"><img src="/suzhou.jpg"></div>
-				<div class="slide"><img src="/yilihuahai.jpg"></div>
+				<div class="slide"><img src="Picture/suzhou.jpg" style="width: 1200px; height: 381px;"></div>
+				<div class="slide"><img src="Picture/yilihuahai1.jpg" style="width: 1200px; height: 381px;"></div>
+				<div class="slide"><img src="Picture/qinhaihu.jpg" style="width: 1200px; height: 381px;"></div>
+				<div class="slide"><img src="Picture/yilihuahai.jpg" style="width: 1200px; height: 381px;"></div>
+				<div class="slide"><img src="Picture/jiuzhaigou.jpg" style="width: 1200px; height: 381px;"></div>
+				<div class="slide"><img src="/suzhou.jpg" style="width: 1200px; height: 381px;"></div>
+				<div class="slide"><img src="/yilihuahai1.jpg" style="width: 1200px; height: 381px;"></div>
 			</div>
 			<span id="left"><</span>
 			<span id="right">></span>
@@ -202,15 +205,23 @@
 				<li>5</li>
 			</ul>
 		</div>
-		<div style="width: 500px; height: 640px; border: red 1px solid; position:relative; left: 500px; top: 50px;">
-			<video src="Video/ranwuLark.mp4"  controls="controls" style="width: 450px; height: 640px; padding-left: 25px;"></video>
-			<span id="left"><</span>
-			<span id="right">></span>
-		</div>
+		<div style="width: 1519px;height: 720px;border-top: green 3px solid;border-bottom: blue 3px solid; margin-top: 30px;">
+			<div style="width: 1519px; height: 150px; border: white 2px solid; margin-top: 20px;">
+				<div style="width: 150px;height: 150px;margin-left: 200px;">热门美景视频<br/><a href=""><p style="color: white;">上传者：</p><br/><img src="Picture/upper.jpg" style="width: 100px;height: 100px;margin-left: 0px; margin-top: -20px;"></a></div>
+				<div style="width: 150px;height: 150px;margin-left: 660px;margin-top: -140px;"><a href=""><h3>网红景点推荐</h3><img src="Picture/bindao.png" style="width: 100px;height: 100px;"></a></div>
+				<div style="width: 150px;height: 150px;margin-left: 1150px;margin-top: -140px;"><a href=""><h3>驴友社区</h3><img src="Picture/lvyou.jpg" style="width: 100px;height: 100px;"></a></div>
+			</div>
+			<div style="width: 1140px; height: 500px; border: white 5px solid; position:relative; left: 160px; top: 20px;">
+				<video src="Video/ranwuLark.mp4"  controls="controls" style="width: 280px;height:500px;padding-left: 3px;"></video>
+	 			<video src="video/v1.mp4" controls="controls" style="width: 280px;height:500px; "></video>
+	 			<video src="video/v2.mp4" controls="controls" style="width: 280px;height:500px;"></video>
+	 			<video src="video/v5.mp4" controls="controls" style="width: 280px;height:500px;"></video>
+	 		</div>
+	 	</div>
 		<div id="wea" style="width: 1002px;height: 545px;border: 1px solid black;position: absolute;left: 230px;top: 1380px;">
 				 <div class="every"style="padding-left: 1px;"><img src="Picture/faguo.png"><p style="text-align: center;">在浪漫的法国城堡下徜徉</p></div>
 				 <div class="every"><img src="Picture/yidali.png"><p style="text-align: center;">在意大利海岸边看一眼夕阳</p></div>
-				 <div class="every"><img src="Picture/meizhou.png"><p style="text-align: center;">去看看玛雅人的金字塔</p></div>
+				 <div class="every"><img src="Picture/meizhou.png"><p style="text-align: center;">去美洲看一看玛雅人的金字塔</p></div>
 				 <div class="every" style="padding-left: 1px;"><img src="Picture/guilin.png"><p style="text-align: center;">桂林山水甲天下</p></div>
 				 <div class="every"><img src="Picture/lijiang.png"><p style="text-align: center;">丽江美景令人流连忘返</p></div>
 				 <div class="every"><img src="Picture/sanya.png"><p style="text-align: center;">捧一杯椰汁沐浴三亚海边的阳光</p></div>
@@ -234,7 +245,7 @@
 				<div style="position: absolute;left: 1050px;padding-top: 15px;">
 					<h3 style="padding-left: 80px;">优质服务</h3>
 					<br/>
-					<h4 style="padding-left: 65px;">Travel全程为您提供优质服务</h4>
+					<h4 style="padding-left: 65px;">Traveler全程为您提供优质服务</h4>
 				</div>
 			</div>
 			<div id="bon">
